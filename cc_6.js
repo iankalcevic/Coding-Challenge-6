@@ -88,3 +88,17 @@ function createExpenseTracker() {
 let tracker = createExpenseTracker();
 console.log(tracker(200)); //Log expense of 200
 console.log(tracker(150)); //Log expense of 150
+
+//Task 8 - Recursion in JavaScript
+function calculateYearsToPromotion(employeeLevel) {
+    if (employeeLevel >=10 ){
+        return 0; //No years need if 10
+    }
+
+    let years = (10 - employeeLevel) * 2; //Calculate years required to reach 10
+
+    return 'Years to level 10: ${years}'; //Logging years 
+};
+
+console.log(calculateYearsToPromotion(7)); //Level 7
+console.log(calculateYearsToPromotion(5)); //Level 5
