@@ -55,3 +55,13 @@ let calculateSubscriptionCost = function(plan, months, discount=0) {
 
 console.log('Basic plan: $${calculateSubscriptionCost("Basic", 6, 10)}'); //6 month plan with 10% discount
 console.log('Premium plan: $${calculateSubscriptionCost("Premium, 12, 0)}'); //12 month plan with no discount
+
+//Task 5 - Returning Values
+let convertCurrency = function(amount, exchangeRate) {
+    let convertAmount= (amount * exchangeRate).toFixed(2);
+
+    return convertedAmount;
+}; //Convert currency
+
+console.log('Converted Currency 1: $${convertCurrency(100, 1.1)}') //Log converted currency
+console.log('Converted Currency 2: $${calculateSubscriptionCost(250, 0.85)}'); //Log converted currency
